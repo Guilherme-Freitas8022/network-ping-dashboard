@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ping de Equipamentos</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1>Ping de Equipamentos</h1>
+
+  <!-- Contadores -->
+  <div id="statusMessage">
+    Online: <span id="onlineCount">0</span> | Offline: <span id="offlineCount">0</span>
+  </div>
+
+  <!-- Spinner -->
+  <div id="spinner" class="hidden"></div>
+
+  <!-- Botão de ping -->
+  <button id="pingBtn">Executar Ping</button>
+  
+  <!-- Tabela -->
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>IP</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody id="equipamentosBody">
+      <!-- Equipamentos aparecerão aqui -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
